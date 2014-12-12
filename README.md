@@ -9,7 +9,7 @@ To help, the tests provide you with which bucket to fill first.
 Your program will take as input:
 - the size of bucket one, passed as a Number
 - the size of bucket two, passed as a Number
-- the desired number of liters to reach, passed a Number
+- the desired number of liters to reach, passed as a Number
 - which bucket to fill first, passed as a String (either 'one' or 'two')
 
 Your program should determine:
