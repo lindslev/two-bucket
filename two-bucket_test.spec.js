@@ -5,8 +5,8 @@ describe('TwoBucket', function(){
 		var buckOne = 3;
 		var buckTwo = 5;
 		var goal = 1;
-		
-		it('works for input of 3,5,1 starting with bucket one', function(){
+
+		it('starting with bucket one', function(){
 			var starterBuck = 'one'; //indicates which bucket you fill first
 			var twoBucket = new TwoBucket(buckOne,buckTwo,goal,starterBuck);
 			expect(twoBucket.moves()).toEqual(4); //includes the first fill
@@ -14,7 +14,7 @@ describe('TwoBucket', function(){
 			expect(twoBucket.otherBucket).toEqual(5); //the leftover value in the "other" bucket once the goal has been reached
 		});
 
-		it('works for input of 3,5,1 starting with bucket two', function(){
+		it('starting with bucket two', function(){
 			var starterBuck = 'two';
 			var twoBucket = new TwoBucket(buckOne,buckTwo,goal,starterBuck);
 			expect(twoBucket.moves()).toEqual(8);
@@ -28,7 +28,7 @@ describe('TwoBucket', function(){
 		var buckTwo = 11;
 		var goal = 2;
 
-		it('works for input of 7,11,2 starting with bucket one', function(){
+		it('starting with bucket one', function(){
 			var starterBuck = 'one';
 			var twoBucket = new TwoBucket(buckOne,buckTwo,goal,starterBuck);
 			expect(twoBucket.moves()).toEqual(14);
@@ -36,7 +36,7 @@ describe('TwoBucket', function(){
 			expect(twoBucket.otherBucket).toEqual(11);
 		});
 
-		it('works for input of 7,11,2 starting with bucket two', function(){
+		it('starting with bucket two', function(){
 			var starterBuck = 'two';
 			var twoBucket = new TwoBucket(buckOne,buckTwo,goal,starterBuck);
 			expect(twoBucket.moves()).toEqual(18);
