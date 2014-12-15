@@ -27,6 +27,8 @@ So the only valid moves are:
 - emptying one bucket and doing nothing to the other
 - filling one bucket and doing nothing to the other
 
+One last rule: when starting with the larger bucket (bucket two), you are NOT allowed at any point to have bucket one full and bucket two empty (the opposite starting point); that would defeat the purpose of seeing the difference between the two approaches! 
+
 Written with <3 at [Fullstack Academy](http://www.fullstackacademy.com/) by [Lindsay](http://github.com/lindslev).
 
 ## Making the Test Suite Pass
