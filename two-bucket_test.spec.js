@@ -1,4 +1,4 @@
-//var TwoBucket = require('./twobucket');
+//var TwoBucket = require('./two-bucket');
 
 describe('TwoBucket', function(){
 	describe('works for input of 3,5,1', function(){
@@ -7,11 +7,11 @@ describe('TwoBucket', function(){
 		var goal = 1;
 
 		it('starting with bucket one', function(){
-			var starterBuck = 'one'; //indicates which bucket you fill first
+			var starterBuck = 'one'; //indicates which bucket to fill first
 			var twoBucket = new TwoBucket(buckOne,buckTwo,goal,starterBuck);
 			expect(twoBucket.moves()).toEqual(4); //includes the first fill
-			expect(twoBucket.goalBucket).toEqual('one'); //which bucket will end up with the desired # of liters
-			expect(twoBucket.otherBucket).toEqual(5); //the leftover value in the "other" bucket once the goal has been reached
+			expect(twoBucket.goalBucket).toEqual('one'); //which bucket should end up with the desired # of liters
+			expect(twoBucket.otherBucket).toEqual(5); //leftover value in the "other" bucket once the goal has been reached
 		});
 
 		it('starting with bucket two', function(){
