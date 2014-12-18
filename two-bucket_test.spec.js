@@ -1,4 +1,4 @@
-//var TwoBucket = require('./two-bucket');
+// var TwoBucket = require('./two-bucket');
 
 describe('TwoBucket', function(){
 	describe('works for input of 3,5,1', function(){

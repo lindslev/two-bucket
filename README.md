@@ -1,10 +1,10 @@
 # Two Bucket Problem
 
-Given two buckets of different size, write a program to demonstrate how to measure an exact number of liters by strategically transferring water between the buckets.
+Given two buckets of different size, write a program to demonstrate how to measure an exact number of liters by strategically transferring liters of fluid between the buckets.
 
 Since this mathematical problem is fairly subject to interpretation / individual approach, the tests have been written specifically to expect one overarching solution.
 
-To help, the tests provide you with which bucket to fill first.
+To help, the tests provide you with which bucket to fill first. That means, when starting with the larger bucket full, you are NOT allowed at any point to have the smaller bucket full and the larger bucket empty (aka, the opposite starting point); that would defeat the purpose of comparing both approaches! 
 
 Your program will take as input:
 - the size of bucket one, passed as a Number
@@ -22,14 +22,12 @@ Note: any time a change is made to either or both buckets counts as one (1) move
 Example: 
 Bucket one can hold up to 7 liters, and bucket two can hold up to 11 liters. Let's say bucket one, at a given step, is holding 7 liters, and bucket two is holding 8 liters (7,8). If you empty bucket one and make no change to bucket two, leaving you with 0 liters and 8 liters respectively (0,8), that counts as one "move". Instead, if you had poured from bucket one into bucket two until bucket two was full, leaving you with 4 liters in bucket one and 11 liters in bucket two (4,11), that would count as only one "move" as well.
 
-So the only valid moves are:
+To conclude, the only valid moves are:
 - pouring from one bucket to another
 - emptying one bucket and doing nothing to the other
 - filling one bucket and doing nothing to the other
 
-One last rule: when starting with the larger bucket (bucket two), you are NOT allowed at any point to have bucket one full and bucket two empty (the opposite starting point); that would defeat the purpose of seeing the difference between the two approaches! 
-
-Written with <3 at [Fullstack Academy](http://www.fullstackacademy.com/) by [Lindsay](http://github.com/lindslev).
+Written with <3 at [Fullstack Academy](http://www.fullstackacademy.com/) by [Lindsay](http://lindsaylevine.com).
 
 ## Making the Test Suite Pass
 
